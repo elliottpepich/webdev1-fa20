@@ -1,0 +1,21 @@
+html {
+    font-size: 18px
+}
+
+div {
+    margin: 20px;
+
+}
+
+.vmin {
+    width: 50vmin;
+    height: 50vmin;
+    background: red
+}
+
+.vmax {
+    width: 50vmax;
+    height: 50vmax;
+    background: blue 
+}
+
