@@ -1,10 +1,5 @@
-@media screen and (max-width:1024px){
-    img.responsive {width: 200px;}
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: salmon;
   }
-  
-  @media screen and (min-width:1025px){
-    img.responsive{width: 300px;}
-  }
-  
-  img.responsive
-  {height: auto;}
+}
