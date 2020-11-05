@@ -1,0 +1,32 @@
+
+  .red-text {
+    color: black;
+  }
+  h2 {
+    font-family: helvetica;
+  }
+  p {
+    font-size: 15px;
+    font-family: helvetica;
+  }
+  div {
+  height: 115px;
+  width: 10%;
+  background-color: tan;
+}
+  .thick-black-border {
+    border-color: black;
+    border-width: 20px;
+    border-style: solid;
+    border-radius: 11%;
+  }
+  .smaller-image {
+    width: 200px;
+  }
+  .tan-background {
+    background-color: tan;
+  }
+  [type='checkbox'] {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
