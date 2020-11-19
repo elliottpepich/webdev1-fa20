@@ -1,7 +1,7 @@
-$(".open").on("click", function() {
-  $(".popup-overlay, .popup-content").addClass("active");
-});
+$('#click-button').click(function(){
+  $('.modal').show();
+})
 
-$(".close, .popup-overlay").on("click", function() {
-  $(".popup-overlay, .popup-content").removeClass("active");
-});
+$('.modalexit').click(function(){
+  $('.modal').hide();
+})

@@ -1,46 +1,50 @@
-html {
-    font-family: "Helvetica Neue", sans-serif;
-    width: 100%;
-    color: #666666;
-    text-align: center;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+}
+
+.modal {
+  color: white;
+  max-width: 800px;
+  max-height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   
-  .popup-overlay {
-    visibility: hidden;
-    position: absolute;
-    background: #ffffff;
-    border: 3px solid #666666;
-    width: 50%;
-    height: 50%;
-    left: 25%;
-  }
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modaltext {
+  text-align: center;
+  padding: 5em;
+  font-size: clamp(12px, 6vmin, 24px);
+  font-family: 'Roboto', sans-serif;
+  background: red;
+  border-radius: .5em;
+  border: 20px solid black;
+}
+
+.modalexit:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.modalexit {
+  position: absolute;
+  font-size: clamp(10px, 8vmin, 30px);
+  right: 4%;
+  top: 9%;
   
-  .popup-overlay.active {
-    visibility: visible;
-    text-align: center;
-  }
-  
-  .popup-content {
-    visibility: hidden;
-  }
-  
-  .popup-content.active {
-    visibility: visible;
-  }
-  
-  button {
-    display: inline-block;
-    vertical-align: middle;
-    border-radius: 30px;
-    margin: .20rem;
-    font-size: 1rem;
-    color: #666666;
-    background: #ffffff;
-    border: 1px solid #666666;
-  }
-  
-  button:hover {
-    border: 1px solid #666666;
-    background: #666666;
-    color: #ffffff;
-  }
+  font-weight: 800;
+}
