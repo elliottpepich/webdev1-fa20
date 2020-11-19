@@ -8,29 +8,18 @@
     <title>jQuery Intro</title>
 </head>
 <body>
-    <h1 id="page-title">Popout</h1>
-    <div id="panel">
-        <input type="button" class="button" value="1" id="btn1">
-        <input type="button" class="button" value="2" id="btn2">
-        <input type="button" class="button" value="3" id="btn3">
-        <br>
-        <input type="text" id="valueFromMyModal">
-        <!-- Dialog Box-->
-        <div class="dialog" id="myform">
-          <form>
-            <label id="valueFromMyButton">
-            </label>
-            <input type="text" id="name">
-            <div align="center">
-              <input type="button" value="Ok" id="btnOK">
-            </div>
-          </form>
-        </div>
+    <button data-modal-target="#modal">Open Modal</button>
+    <div class="modal" id="modal">
+      <div class= "modal-header">
+        <div class="title">Example Modal</div>
+        <button data-close-button class="close-button">&times;</button>
       </div>
+      <div class="modal-body">
+        We did it
+      </div>
+    </div>
+    <div id="overlay"></div>
     
-    
-
-
   <script src="main.js"></script>
 </body>
 </html>   
